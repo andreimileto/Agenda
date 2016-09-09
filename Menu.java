@@ -200,15 +200,15 @@ public class Menu {
                     System.out.println("opção inválida");
                 }
             } else if (menu == 7) {
-                DataHora dt = new DataHora();
+                
                 int diaI = Entrada.leiaInt("Digite o dia do inicio");
                 int mesI = Entrada.leiaInt("Digite o mes de inicio");
                 int anoI = Entrada.leiaInt("Digite o ano de inicio");
                 int diaF = Entrada.leiaInt("Digite o dia do fim");
                 int mesF = Entrada.leiaInt("Digite o mes do fim");
                 int anoF = Entrada.leiaInt("Digite o ano de fim");
-                int result1 = dt.formatarData(diaI, mesI, anoI);
-                int result2 = dt.formatarData(diaF, mesF, anoF);
+                int result1 = DataHora.formatarData(diaI, mesI, anoI);
+                int result2 = DataHora.formatarData(diaF, mesF, anoF);
                 
                 for (int i = 0; i < countVetorListaDeAgenda; i++) {
                     if (vetorDeAgenda[i].listarCompromissosDeUmPeriodo(result1, result2)) {

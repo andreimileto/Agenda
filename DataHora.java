@@ -17,6 +17,7 @@ public class DataHora {
     private int mes;
     private int ano;
     private String hora;
+    
 
     public String getHora() {
         return hora;
@@ -50,7 +51,7 @@ public class DataHora {
     public void setAno(int ano) {
         this.ano = ano;
     }
-    public int formatarData(int dia, int mes, int ano){
+    public static int formatarData(int dia, int mes, int ano){
         String dataFormatada = "";
        
         if(ano < 99){
